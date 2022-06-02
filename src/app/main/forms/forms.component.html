@@ -1,0 +1,32 @@
+<!-- multistep form -->
+<form id="msform">
+    <fieldset>
+      <h2 class="fs-title">Formularz zgłoszeniowy</h2>
+      <h5>Email</h5>
+      <input type="text" name="email" placeholder="Email" required/>
+      <h5>Nazwa druzyny</h5>
+      <input type="text" name="name" placeholder="Nazwa druzyny" required/>
+      <h5>Numer telefonu</h5>
+      <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+       <h5>Wiek</h5>
+       <input type="number" name="age" placeholder="Wiek" required/>
+
+       <div class="choice">
+           <div class="row">
+                <input type="radio" name="lol" required />
+                <label for="scales">League of Legends</label>
+           </div>
+           <div class="row">
+                <input type="radio" name="lol" required />
+                <label for="scales">Fortnite</label>
+            </div>
+            <div class="row">
+                <input type="radio" name="lol" required />
+                <label for="scales">Counter-Strike</label>
+            </div>
+       </div>
+    
+      <input type="button" name="next" class="next action-button" value="Zgłoś mnie" />
+    </fieldset>
+  </form>

@@ -11,10 +11,9 @@ html, body {
     align-items: center;
 }
 
-.card {
+.cardd {
     width: 50vh;
     height: 50vh;
-    margin-right: 15px;
     text-align: center;
     padding-top: 20px;
 }
