@@ -1,32 +1,33 @@
 <!-- multistep form -->
+<div class="formm bg-dark">
 <form id="msform">
     <fieldset>
-      <h2 class="fs-title">Formularz zgłoszeniowy</h2>
-      <h5>Email</h5>
+      <h2 class="fs-title pb-3"><b>Formularz zgłoszeniowy</b></h2>
+      <h5 class="pb-2 ">Email</h5>
       <input type="text" name="email" placeholder="Email" required/>
-      <h5>Nazwa druzyny</h5>
+      <h5 class="pb-2 mt-2">Nazwa druzyny</h5>
       <input type="text" name="name" placeholder="Nazwa druzyny" required/>
-      <h5>Numer telefonu</h5>
-      <input type="tel" id="phone" name="phone"
+      <h5 class="pb-2 mt-2">Numer telefonu</h5>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-789"
        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-       <h5>Wiek</h5>
+       <h5 class="pb-2 mt-2">Wiek</h5>
        <input type="number" name="age" placeholder="Wiek" required/>
-
-       <div class="choice">
-           <div class="row">
-                <input type="radio" name="lol" required />
+       <h5 class="pb-2 mt-2 text-center">Gra</h5>
+       <div class="choice d-flex justify-content-center p-3">
+           <div class="row p-3 text-center">
+                <input class="gzk" type="radio" name="lol" required />
                 <label for="scales">League of Legends</label>
            </div>
-           <div class="row">
-                <input type="radio" name="lol" required />
+           <div class="row p-3 text-center">
+                <input class="gzk" type="radio" name="lol" required />
                 <label for="scales">Fortnite</label>
             </div>
-            <div class="row">
-                <input type="radio" name="lol" required />
+            <div class="row p-3 text-center">
+                <input class="gzk" type="radio" name="lol" required />
                 <label for="scales">Counter-Strike</label>
             </div>
        </div>
-    
       <input type="button" name="next" class="next action-button" value="Zgłoś mnie" />
     </fieldset>
   </form>
+</div>

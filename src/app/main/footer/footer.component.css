@@ -15,11 +15,18 @@ body {
     display: grid;
     place-items: center;
 }
-
-.card {
+h6{
+    width: 40%;
+}
+.tak{
+    font-size: 25px;
+}
+.cardd {
     background-color: #222222;
-    border-radius: 10px;
     font-family: 'Manrope', sans-serif;
+}
+.mail{
+    width: 40%;
 }
         
         .fa{
@@ -30,6 +37,7 @@ body {
             background-color: #222222;
             border: 1px solid #636161;
             font-size: 0.75rem;
+
         }
         
         #inp1:focus{
@@ -41,6 +49,7 @@ body {
             background-color: #5c72d8;
             font-size: 0.78rem;
             border: 0px;
+            height: 100%;
         }
         
         .btn:focus{
@@ -50,4 +59,12 @@ body {
         
          *:focus{
             outline: none;
+        }
+        @media screen and (max-width: 680px) {
+            .mail{
+                width: 80%;
+            }
+            h6{
+                width: 70%;
+            }
         }
