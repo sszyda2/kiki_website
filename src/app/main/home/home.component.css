@@ -21,9 +21,3 @@ html, body {
     font-size: 60px;
     font-weight: bolder;
 }
-
-.bg-dark button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
