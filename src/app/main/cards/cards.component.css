@@ -17,33 +17,34 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding: 20px;
   grid-gap: 20px;
-  margin-left: 22px;
-  text-align: center;
-  align-items: center;
+  flex-direction: row;
+  transition: 0.3s;
 }
 
 .card {
+  transition: 0.3s;
   width: 45vh;
-  height: 55vh;
-  border-radius: 20px;
+  height: 50vh;
+  border-radius: 18px;
   box-shadow: 0 0 30px rgba(0,0,0,0.18);
-  text-align: center;
-  align-items: center;
 }
 
 .card1 {
+  transition: 0.3s;
   background-image: url(./lol.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .card2 {
+  transition: 0.3s;
   background-image: url(./fortnite.webp);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .card3 {
+  transition: 0.3s;
   background-image: url(./csgo.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -77,4 +78,44 @@ img {
 h1 { 
   text-align: center;
   font-weight: bolder;
+}
+@media screen and (max-width: 1260px) {
+  .card{
+    width: 40vh;
+    height: 45vh;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .card{
+    width: 35vh;
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .card{
+    width: 30vh;
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 810px) {
+  .card{
+    width: 25vh;
+    height: 27vh;
+  }
+}
+@media screen and (max-width: 680px) {
+  .cards{
+    align-items: center;
+    flex-direction: column;
+  }
+  .card{
+    width: 35vh;
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 620px) {
+.card{
+  width: 25vh;
+  height: 25vh;
+}
 }
