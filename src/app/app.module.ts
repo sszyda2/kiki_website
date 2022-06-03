@@ -20,7 +20,7 @@ import { FormsComponent } from './main/forms/forms.component';
     CardsComponent,
     DescComponent,
     DevsComponent,
-    FormsComponent
+    FormsComponent,
   ],
   imports: [
     BrowserModule,

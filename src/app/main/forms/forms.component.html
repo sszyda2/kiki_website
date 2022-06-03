@@ -1,6 +1,6 @@
 <!-- multistep form -->
 <div class="formm bg-dark">
-<form id="msform">
+<form id="msform" method="get" action="/action_page.php">
     <fieldset>
       <h2 class="fs-title pb-3"><b>Formularz zgłoszeniowy</b></h2>
       <h5 class="pb-2 ">Email</h5>
@@ -9,7 +9,7 @@
       <input type="text" name="name" placeholder="Nazwa druzyny" required/>
       <h5 class="pb-2 mt-2">Numer telefonu</h5>
       <input type="tel" id="phone" name="phone" placeholder="123-456-789"
-       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+       pattern="[5-8]{1}[0-9]{8}" required>
        <h5 class="pb-2 mt-2">Wiek</h5>
        <input type="number" name="age" placeholder="Wiek" required/>
        <h5 class="pb-2 mt-2 text-center">Gra</h5>
@@ -27,7 +27,7 @@
                 <label for="scales">Counter-Strike</label>
             </div>
        </div>
-      <input type="button" name="next" class="next action-button" value="Zgłoś mnie" />
+      <input type="submit" name="next" class="next action-button" value="Zgłoś mnie" />
     </fieldset>
   </form>
 </div>
