@@ -1,10 +1,10 @@
 <!-- multistep form -->
-<div class="formm bg-dark">
+<div class="formm bg-dark" id="proba">
 <form id="msform" method="get" action="/action_page.php">
     <fieldset>
       <h2 class="fs-title pb-3"><b>Formularz zgłoszeniowy</b></h2>
       <h5 class="pb-2 ">Email</h5>
-      <input type="text" name="email" placeholder="Email" required/>
+      <input type="text" name="email" placeholder="Email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required/>
       <h5 class="pb-2 mt-2">Nazwa druzyny</h5>
       <input type="text" name="name" placeholder="Nazwa druzyny" required/>
       <h5 class="pb-2 mt-2">Numer telefonu</h5>
